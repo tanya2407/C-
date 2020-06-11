@@ -1,3 +1,6 @@
+/*
+HackerRank practice qustions -> interview kit-> arrays
+*/
 #include <bits/stdc++.h>
 
 using namespace std;
