@@ -1,8 +1,8 @@
-<h4>Some notes on programming questions solved using c++</h4>
+# Some notes on programming questions solved using C++
 
-<h5> String: </h5> 
-Intialize: string s = "" </br>
-length: s.length() </br>
+## Srings
+1. Intialize: ```string s = "" ```
+2. String length: ```s.length();```
 
 ## Hashmap in C++
 #### unordered_map:
@@ -18,12 +18,18 @@ length: s.length() </br>
                   } 
                   ```
                 
-<h5>unordered_set:</h5> Stores only keys </br>
-                  Mainly used is keep track of absence/presence elements.</br>
+#### unordered_set:
+1. Stores only keys.
+2. Mainly used is keep track of absence/presence elements.
                   
-<h5>set:</h5> ordered sequence of unique keys
-<h5>map:</h5> ordered sequence of unique keys and corresponding values</br>
-              It is implemented as balanced tree structure that is why it is possible to maintain an order between the elements (by specific tree traversal).</br>
-              Time complexity of map operations is O(Log n) while for unordered_map, it is O(1) on average.
+#### set:
+1. ordered sequence of unique keys
+
+#### map:
+1. Ordered sequence of unique keys and corresponding values
+2. It is implemented as balanced tree structure that is why it is possible to maintain an order between the elements (by specific tree traversal).
+3. Time complexity of map operations is O(Log n) while for unordered_map, it is O(1) on average.
                   
 
+Note created from the following links:
+[GeeksforGeeks C++ STL](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/#:~:text=unordered_map%20in%20C%2B%2B%20STL,type%20predefined%20or%20user%2Ddefined.)
