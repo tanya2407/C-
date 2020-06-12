@@ -4,12 +4,19 @@
 Intialize: string s = "" </br>
 length: s.length() </br>
 
-<h5>unordered_map:</h5>  Stores elements as a combination of key value pair. </br>
-                Library: ```terminal #include<unordered_map>``` OR ```#include<terminal bits/stdc++.h>``` </br>
-                Initialization example: unordered_map<string,int> map </br>
-                Internally implemented using Hash table. Therefore avgcost of search,insert,delete is O(1).</br>
-                Inserting Values: map["Tanya"] = 1; </br>
-                Traversing: for(auto i: map){  cout<<i.first()<<i.second(); } </br>
+## Hashmap in C++
+#### unordered_map:
+1. Stores elements as a combination of key value pair. 
+2. Library: ``` #include<unordered_map>``` OR ```#include<bits/stdc++.h>``` 
+3. Initialization example: ```unordered_map<string,int> map```
+4. Internally implemented using Hash table. Therefore avgcost of search,insert,delete is O(1).
+5. Inserting Values: ```map["Tanya"] = 1;``` 
+6. Traversing: ```
+                  for(auto i: map)
+                  {
+                      cout<<i.first()<<i.second(); 
+                  } 
+                  ```
                 
 <h5>unordered_set:</h5> Stores only keys </br>
                   Mainly used is keep track of absence/presence elements.</br>
