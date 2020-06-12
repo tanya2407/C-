@@ -3,20 +3,52 @@
 ## Srings
 1. Intialize: ```string s = "" ```
 2. String length: ```s.length();```
+3. Breaking input into word using string stream: 
+```
+stringstream ss(s);  // Used for breaking words 
+string word;         // To store individual words 
+while (ss >> word) 
+  wordFreq[word]++;
 
+```
 ## Hashmap in C++
 #### unordered_map:
 1. Stores elements as a combination of key value pair. 
 2. Library: ``` #include<unordered_map>``` OR ```#include<bits/stdc++.h>``` 
 3. Initialization example: ```unordered_map<string,int> map```
 4. Internally implemented using Hash table. Therefore avgcost of search,insert,delete is O(1).
-5. Inserting Values: ```map["Tanya"] = 1;``` 
-6. Traversing: ```
-                  for(auto i: map)
-                  {
-                      cout<<i.first()<<i.second(); 
-                  } 
-                  ```
+5. Inserting Values: ```map["Tanya"] = 1;``` OR ``` map.insert(make_pair("Tanya", 1)); 
+
+6. Traversing: 
+```
+for(auto i: map)
+{
+  cout<<i.first()<<i.second(); 
+} 
+```
+
+7. Traversing using a iterator:
+```
+unordered_map<string, int>:: iterator itr; 
+    for (itr = map.begin(); itr != map.end(); itr++) 
+    { 
+        // itr works as a pointer to pair<string, double> 
+        // type itr->first stores the key part  and 
+        // itr->second stroes the value part 
+        cout << itr->first << "  " << itr->second << endl; 
+     } 
+
+```
+8. Finding a key using an iterator:
+```
+if (map.find(key) == map.end()){
+  Key not found
+}
+else{
+  Key Found
+}
+
+``` 
                 
 #### unordered_set:
 1. Stores only keys.
@@ -31,5 +63,5 @@
 3. Time complexity of map operations is O(Log n) while for unordered_map, it is O(1) on average.
                   
 
-Note created from the following links:
-[GeeksforGeeks C++ STL](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/#:~:text=unordered_map%20in%20C%2B%2B%20STL,type%20predefined%20or%20user%2Ddefined.)
+Notes created from the following links:
+[GeeksforGeeks unordered_map in C++ STL](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/#:~:text=unordered_map%20in%20C%2B%2B%20STL,type%20predefined%20or%20user%2Ddefined.)
