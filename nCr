@@ -18,3 +18,7 @@ nCr = n! / [(n-r)! * r!]
     return res;
 }
  
+ 
+ Approach 2: Dynamic Programming
+ Use: C(n,k) = C(n-1,k-1) + C(n-1,k)
+ C(n,0) = C(n,n) = 1
