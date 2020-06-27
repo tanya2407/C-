@@ -11,6 +11,11 @@ while (ss >> word)
   wordFreq[word]++;
 
 ```
+## Vectors in C++
+1. Initialize: ```vector<int> arr; ``` OR ```vector<int> arr(n) ``` Initializes array with n elements having values 0 OR ```vector<int> arr(n,k)``` Initializes an array with n elements having values k.
+
+2. sorting a vector: ```sort(arr.begin(),arr.end());```
+
 ## Hashmap in C++
 #### unordered_map:
 1. Stores elements as a combination of key value pair. 
