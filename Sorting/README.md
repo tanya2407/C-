@@ -30,3 +30,54 @@ With each subsequent iteration "k", kth largest element is being placed at its p
 3. Best case: When partition always picks the middle element as pivot -> T(n) = 2T(n/2) + O(n) -> O(NlogN)
 4. Average case : O(NlogN)
 For more reference [Click here](https://www.geeksforgeeks.org/quick-sort/)
+```
+#include <iostream>
+#include <bits/stdc++.h>
+#include<vector>
+#include<string>
+using namespace std;
+
+void swap(int* a, int* b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int partition(int a[],int low, int high){
+    int index = low; // position for the pivot 
+    for(int i=low;i<high;i++){
+        if(a[i]<a[high]){
+            swap(&a[i],&a[index]);
+            index++;
+        }
+    }
+    swap(&a[index],&a[high]);
+    return index;
+}
+
+
+void quicksort(int a[],int low,int high){
+    if(low<high){
+    int index = partition(a,low,high);
+    
+    quicksort(a,low,index-1);
+    quicksort(a,index+1,high);
+}
+}
+
+
+void print(int arr[],int size){
+     int i;  
+    for (i = 0; i < size; i++)  
+        cout << arr[i] << " ";  
+    cout << endl; 
+}
+int main() {
+   int arr[] = {9,6,4,8,6};  
+    int n = sizeof(arr) / sizeof(arr[0]);  
+    quicksort(arr, 0, n - 1);  
+    cout << "Sorted array: \n";  
+    print(arr, n);  
+    return 0;  
+}
+```
