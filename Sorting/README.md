@@ -1,3 +1,25 @@
+## STL sort() and comparators
+1. sorting an array in ascending order: ``` sort(arr,arr+n); ``` , where ``` n = sizeof(arr)/sizeof(arr[0]);```
+2. sorting a vector in ascending order: ``` sort(arr.being(),arr.end()); ```
+3. sorting in descending order: ``` sort(arr, arr+n, greater<int>()); ```
+4. Using comparator:  The function comp returns true, when a should be found before b in the sorted array.
+-> For ascending : if a<b return 1
+-> For descending: if a<b return -1
+```
+struct ob{
+  int low;
+  int high;
+};
+
+bool comparator_function( ob a, ob b ){
+  return a.low < b.low;   //For ascending
+  reutrn a.low > b.low;   // For descending
+}
+
+sort(arr,arr+n,comparator_function);
+```
+
+
 ## Bubble Sort
 With each subsequent iteration "k", kth largest element is being placed at its position. 
 1. Naive approach -> 2 for loops -> takes O(n^2) everytime
