@@ -2,8 +2,8 @@
 1. sorting an array in ascending order: ``` sort(arr,arr+n); ``` , where ``` n = sizeof(arr)/sizeof(arr[0]);```
 2. sorting a vector in ascending order: ``` sort(arr.being(),arr.end()); ```
 3. sorting in descending order: ``` sort(arr, arr+n, greater<int>()); ```
-4. Using comparator:  The function comp returns true, when a should be found before b in the sorted array.
--> For ascending : if a<b return 1
+4. Using comparator:  The function comp returns true, when a should be found before b in the sorted array. <br>
+-> For ascending : if a<b return 1 <br>
 -> For descending: if a<b return -1
 ```
 struct ob{
