@@ -14,7 +14,9 @@ while (ss >> word)
 ## Vectors in C++
 1. Initialize: ```vector<int> arr; ``` OR ```vector<int> arr(n) ``` Initializes array with n elements having values 0 OR ```vector<int> arr(n,k)``` Initializes an array with n elements having values k.
 
-2. sorting a vector: ```sort(arr.begin(),arr.end());```
+2. Initializing a 2D matrix of size mxn :     vector<vector<int>> matrix(m,vector<int> (n,0));
+
+3. sorting a vector: ```sort(arr.begin(),arr.end());```
 
 ## Hashmap in C++
 #### unordered_map:
