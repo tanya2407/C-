@@ -11,6 +11,8 @@ while (ss >> word)
   wordFreq[word]++;
 
 ```
+4. String concatenate: ``` A + B```
+
 ## Vectors in C++
 1. Initialize: ```vector<int> arr; ``` OR ```vector<int> arr(n) ``` Initializes array with n elements having values 0 OR ```vector<int> arr(n,k)``` Initializes an array with n elements having values k.
 
