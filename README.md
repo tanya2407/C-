@@ -13,6 +13,9 @@ while (ss >> word)
 ```
 4. String concatenate: ``` A + B```
 
+DType to string: ```to_string()```
+string to int/long int/ long long int: ```stoi()```, ```stol()``` and ```stoll()```
+
 ## Vectors in C++
 1. Initialize: ```vector<int> arr; ``` OR ```vector<int> arr(n) ``` Initializes array with n elements having values 0 OR ```vector<int> arr(n,k)``` Initializes an array with n elements having values k.
 
